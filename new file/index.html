@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoil work</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body><div class="hero-img"></div>
+        <div class="wrapper">
+             <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            <nav>
+                <svg class="svgicon" viewBox="0 0 20 20">
+                    <path d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z"></path>
+                </svg>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Players</a></li>
+            </ul>
+         
+             </nav>
+             <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+                </svg>
+        </header>
+        <section class="hero">
+            <h1>Regain your confidenr on the court.</h1>
+            <p class="subhead"> A shoe built with purpose and to take your game to the next level.</p>
+            <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+            </svg>
+
+        </section>
+        
+        <section class="more-info">
+
+            <div class="feature">
+                <div class="containt">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes. </p>
+                </div>
+                <img src="images/shoe2.jpg" alt=""Another shoe">
+            </div>
+
+            <div class="feature left">
+                <div class="containt">
+                    <p class="title">Flexibility</p>
+                    <p class=desc">Soft, flexible soles will allow the walker to push off easly with each step. </p>
+                </div>
+                <img src="images/shoe3.jpg" alt=""Another shoe">
+            </div>
+
+            <div class="feature">
+                <div class="containt">
+                    <p class="title">Durability</p>
+                    <p class="desc">Lightweight, woven material  is durable and provide structure and support.</p>
+                </div>
+                <img src="images/shoe4.jpg" alt=""Another shoe">
+            </div>
+        </section>
+        </div>
+        <script>
+            const menu=document.querySelector('.menu')
+            const svgicon=document.querySelector('.svgicon')
+            const nav=document.querySelector('nav')
+
+            menu.addEventListener('click',()=>{
+                nav.classList.add('opennav')
+            })
+                svgicon.addEventListener('click',()=>{
+                nav.classList.remove('opennav')
+            })
+        </script>
+    </body>
+</html>
